@@ -7,3 +7,17 @@
 //write a conditional to check if there are enough donuts
 
   //alert the user with a message telling them the numbers of donuts and guests, and if there are enough donuts for each guest.
+
+function donutCounter() {
+
+  var donuts = prompt("How many donuts?")
+  var guests = prompt("How many guests?")
+
+  if (donuts < guests) {
+    alert(`There are ${donuts} donuts and ${guests} guests.` + " There are not enough donuts...");
+  } else {
+    alert(`There are ${donuts} donuts and ${guests} guests.`+ " There's plenty for everyone!");
+  }
+};
+
+donutCounter()
